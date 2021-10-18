@@ -1,0 +1,154 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#desktop", "flex-layout.row#menu"
+    ]
+  },
+ 
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://www.wedigi.com.br/wp-content/themes/wedigi-theme/assets/images/logo-wedigi.png",
+      "width": "80"
+    }
+    },
+    "flex-layout.row#menu": {
+      "props": {
+        "blockClass": "rowMenu"
+      },
+      "children": ["vtex.menu@2.x:menu#websites"]
+    },
+    "vtex.menu@2.x:menu#websites": {
+      "props": {
+        "blockClass": "menu",
+        "items": [
+          {
+            "id": "menu-item-ação",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "ação",
+              "text": "Ação"
+            }
+          },
+          {
+            "id": "menu-item-aventura",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "aventura",
+              "text": "Aventura"
+            }
+          },
+          {
+            "id": "menu-item-rpg",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "rpg",
+              "text": "RPG"
+            }
+          },
+          {
+            "id": "menu-item-estrategia",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "estrategia",
+              "text": "Estratégia"
+            }
+          },
+          {
+            "id": "menu-item-simulação",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/",
+              "noFollow": false,
+              "tagTitle": "simulação",
+              "text": "Simulação"
+            }
+          }
+
+        ]
+      }
+    },
+
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["vtex.menu@2.x:menu#websites"]
+  }
+}

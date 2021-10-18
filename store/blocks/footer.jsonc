@@ -1,0 +1,224 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer"
+      ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": {
+    "props":{
+      "preventVerticalStretch": true,
+      "blockClass": "footer-row"
+    },
+    "children": [
+     "flex-layout.col#institucional",
+      "flex-layout.col#ajuda",
+      "flex-layout.col#atendimento",
+      "social-networks"
+
+    ]
+  },
+    
+      "rich-text#footer-email": {
+        "props": {
+          "blockClass": "footer-link",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Se increva na newsletter"
+        }
+      },
+    "flex-layout.col#institucional": {
+      "props": {
+        "blockClass": "col-institucional",
+        "preventVerticalStretch": true 
+      },
+      "children": [
+        "rich-text#institucional-faleconosco",
+        "rich-text#institucional-cupons",
+        "rich-text#institucional-frete",
+        "rich-text#institucional-lojas",
+        "rich-text#institucional-sobre",
+        "rich-text#institucional-tabela",
+        "rich-text#institucional-trocas"
+      ]
+    },
+      "rich-text#institucional-title": {
+        "props": {
+          "blockClass": "col-title",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "INSTITUCIONAL",
+          "font": "open-sans-condensed"
+        }
+      },
+      "rich-text#institucional-faleconosco": {
+        "props": {
+          "blockClass": "col-faleconosco",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "FALE CONOSCO"
+        }
+      },
+      "rich-text#institucional-cupons": {
+        "props": {
+          "blockClass": "col-cupons",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "CUPONS"
+        }
+      },
+      "rich-text#institucional-frete": {
+        "props": {
+          "blockClass": "col-frete",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "FRETE GRÁTIS"
+        }
+      },
+      "rich-text#institucional-lojas": {
+        "props": {
+          "blockClass": "col-lojas",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "LOJAS OFICIAIS"
+        }
+      },
+      "rich-text#institucional-sobre": {
+        "props": {
+          "blockClass": "col-sobre",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "SOBRE NÓS"
+        }
+      },
+      "rich-text#institucional-tabela": {
+        "props": {
+          "blockClass": "col-tabela",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "TABELA DE MEDIDAS"
+        }
+      },
+      "rich-text#institucional-trocas": {
+        "props": {
+          "blockClass": "col-trocas",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "TROCAS E DEVOLUÇÕES"
+        }
+      },
+      
+    "flex-layout.col#ajuda": {
+      "props": {
+        "blockClass": "col-ajuda",
+        "preventVerticalStretch": true 
+      },
+      "children": [
+        "rich-text#ajuda-perguntas",
+        "rich-text#ajuda-termos",
+        "rich-text#ajuda-políticas", 
+        "rich-text#ajuda-comocomprar"
+      ]
+    },
+      "rich-text#ajuda-title": {
+        "props": {
+          "blockClass": "col-title",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "AJUDA"
+        }
+      },
+        "rich-text#ajuda-perguntas": {
+          "props": {
+            "blockClass": "col-perguntas",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "PERGUNTAS FREQUENTES"
+          }
+        },
+
+        "rich-text#ajuda-termos": {
+          "props": {
+            "blockClass": "col-termos",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "TERMOS DE USO"
+          }
+        },
+        "rich-text#ajuda-políticas": {
+          "props": {
+            "blockClass": "col-políticas",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "POLÍTICAS DE PRIVACIDADE"
+          }
+        },
+        "rich-text#ajuda-comocomprar": {
+          "props": {
+            "blockClass": "col-comocomprar",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "COMO COMPRAR"
+          }
+        },
+    "flex-layout.col#atendimento": {
+      "props": {
+        "blockClass": "col-atendimento",
+        "preventVerticalStretch": true
+        },
+        "children": [
+          "rich-text#atendimento-title",
+          "rich-text#atendimento-telefone",
+          "rich-text#atendimento-whats",
+          "rich-text#atendimento-email"
+        ]
+    },
+      "rich-text#atendimento-title": {
+        "props": {
+          "blockClass": "col-title",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "ATENDIMENTO"
+        }
+      },
+        "rich-text#atendimento-telefone": {
+          "props": {
+            "blockClass": "col-telefone",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "TELEFONE (11) 99999-0000"
+          }
+        },
+        "rich-text#atendimento-whats": {
+          "props": {
+            "blockClass": "col-whats",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "WHATSAPP (11) 99999-0000"
+          }
+        }, "rich-text#atendimento-email": {
+          "props": {
+            "blockClass": "col-email",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "EMAIL: CONTATO@WEDIGI.COM.BR"
+          }
+        },
+      
+          "social-networks": {
+            "props": {
+              "socialNetworks": [
+                { "url": "https://facebook.com/foo", "name": "Instagram" },               
+                { "url": "https://twitter.com/foo", "name": "Linkedin" }
+              ]
+            }
+          
+          }
+  }

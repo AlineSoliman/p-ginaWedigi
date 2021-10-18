@@ -1,0 +1,14 @@
+{
+    "slider-layout#home": {
+     "children": ["image#brand1",
+      "image#brand2"
+      ],
+     "props": {
+       "autoplay": {
+        "timeout": 7000,
+         "stopOnHover": true
+      }
+     }
+   },
+
+  

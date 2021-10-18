@@ -1,0 +1,143 @@
+{
+  "store.home":{
+    "blocks":[
+        "search-result-layout.customQuery#home"
+    ]
+ },
+ 
+  "store.home": {
+    "blocks": ["stack-layout#cta", "rich-text","list-context.product-list", "stack-layout#cta#2", "modal-trigger#first"  ]
+  },
+  "stack-layout#cta": {
+       "children": [
+         "image#cta",
+         "link#cta"
+       ]
+     },
+
+     "image#cta": {
+         "props": {
+           "blockClass": "cover",
+           "width": "100%",
+           "height": 400,
+           "src": "https://viciados.net/wp-content/uploads/2019/08/cropped-agencja-pinkerton-pozywa-rockstar-games-za-red-dead-redemption-2-1-scaled.jpg"
+        }
+       },
+       "link#cta": {
+         "props": {
+           "displayMode": "button",
+           "buttonProps": {
+             "variant": "primary",
+             "size": "large"
+           },
+           "href": "/washer",
+           "label": "RED DEAD REDEMPTION II"
+         }
+       },
+
+       "stack-layout#cta#2": {
+        "children": [
+          "image#cta#2",
+          "link#cta#2"
+        ]
+      },
+ 
+      "image#cta#2": {
+          "props": {
+            "blockClass": "cover",
+            "width": "100%",
+            "height": 400,
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7KToQ4n7YKrS1YuVukJbdHK5gX2y6s1edg&usqp=CAU"
+         }
+        },
+        "link#cta#2": {
+          "props": {
+            "displayMode": "button",
+            "buttonProps": {
+              "variant": "primary",
+              "size": "large"
+            },
+            "href": "/washer",
+            "label": "Vem aí em Outubro Far Cry 6 "
+          }
+        },
+ 
+  "list-context.product-list": {
+       "blocks": ["product-summary.shelf"],
+       "children": ["slider-layout"]
+     },
+     "product-summary.shelf": {
+      "children": [
+        "product-summary-image",
+        "product-summary-name",
+        "product-summary-sku-name",
+        "product-summary-attachment-list",
+        "product-summary-space",
+        "product-summary-column#1"
+      ]
+    },  
+
+    "product-specification-badges": {
+      "props": {
+        "specificationGroupName": "allSpecifications",
+        "specificationsOptions": [{
+          "specificationName": "On Sale",
+          "displayValue": "SPECIFICATION_NAME",
+          "visibleWhen": "True"
+
+        },
+        {
+          "specificationName": "Demo",
+          "displayValue": "SPECIFICATION_NAME",
+          "visibleWhen": "True"
+        }]
+      }
+    },
+  
+  
+  "rich-text": {
+    "props": {
+      "text": "Destaques da Semana"     
+    }
+  },
+
+  "modal-trigger#first": {
+    "children": [
+      "rich-text#trigger"
+    ]
+  },
+  "rich-text#trigger": {
+    "props": {
+      "text": "CLICK ME"
+    }
+  },
+
+   
+
+
+ "search-result-layout.customQuery#home":{
+   "props":{
+     "querySchema":{
+       "skusFilter": "FIRST_AVAILABLE",
+       "simulationBehavior": "skip"
+    }
+  },
+  "blocks":["search-result-layout.desktop#lp"]
+ },
+ "search-result-layout.desktop#lp":{
+  "children": [
+    "search-content#lp"
+  ],
+  "props": {
+    "preventRouteChange": true
+  }
+  },
+  "search-content#lp":{
+    "blocks":[
+      "gallery", "not-found"
+    ]
+  }
+
+
+
+}
